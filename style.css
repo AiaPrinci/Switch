@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    height: 300px;
+    background-image: url('./cartoon-animated-clouds-in-the-sky-free-video.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5) inset;
+    margin: 50px;
+    gap: 5px;
+    padding: 20px;
+    border-radius: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    background-color: #ffe100;
+    border-radius: 50%;
+    transition: transform 1s;
+    box-shadow: rgba(0, 0, 0, 0.318) 10px 10px 20px 0px, 
+                rgba(0, 0, 0, 0.306) -10px -10px 30px 0px inset;
+}
+
+.night {
+    width: 600px;
+    height: 300px;
+    background-image: none;
+    background-color: #474747;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5) inset;
+    margin: 50px;
+    gap: 5px;
+    padding: 20px;
+    border-radius: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.moon {
+    width: 250px;
+    height: 250px;
+    background-color: #929292;
+    border-radius: 50%;
+    transition: transform 1s;
+    box-shadow: rgba(0, 0, 0, 0.318) 10px 10px 20px 0px, 
+                rgba(0, 0, 0, 0.306) -10px -10px 30px 0px inset;
+    transform: translateX(125%);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        height: 200px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .moon {
+        transform: translateX(110%);
+    }
+}
